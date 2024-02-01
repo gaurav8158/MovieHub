@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #212529;
+}
+
+::selection {
+  background-color: rgb(83, 81, 81);
+  color: rgb(209, 203, 203);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(83, 81, 81);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  border-radius: 3rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eef1f4;
+}
+.movie-body {
+  display: flex;
+  gap: 2rem;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: x-large;
+  font-style: normal;
+}
+
+.about {
+  box-shadow: 20px 10px 10px rgba(137, 131, 131, 0.1);
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.card-movie-img {
+  transition: transform 0.4s ease;
+}
+.card-movie-img:hover {
+  transform: scale(1.04);
+}
+.card-movie-box {
+  overflow: hidden;
+}
+.about-text {
+  max-width: 1000px;
+  font-size: small;
+  color: #a0a2a5;
+  font-weight: 800 !important;
+}
+.order-page {
+  border-bottom: 1px;
+  cursor: pointer;
+}
+.order-page:hover {
+  border-bottom: 1px solid #a0a2a5;
+}
+.order-element {
+  margin-right: 1.5rem;
+}
+@media only screen and (max-width: 640px) {
+  .movie-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
